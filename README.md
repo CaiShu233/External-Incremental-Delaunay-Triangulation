@@ -1,6 +1,6 @@
 # External-Incremental-Delaunay-Triangulation
 
-Maybe the most and clever way to construct Delaunay trianglulation
+Maybe the most easiest and clever way to construct Delaunay triangulation
 
 
 ## Introduction of Algorithm
@@ -11,11 +11,10 @@ Maybe the most and clever way to construct Delaunay trianglulation
 
 ### Step 3: keep increasing the point to the delaunay triangulation
   notice that the border of the delaunay trianglulation is convex hull
-#### Find the upper tangent line and lower tangent line of convex hull
+Find the upper tangent line and lower tangent line of convex hull
   notice that the point always out of the convex hull
-#### remove the edge which triangle's whose circum - circles...
+update delaunay triangulation
 
-### Finished
 
 ## How to use
 
@@ -27,8 +26,8 @@ Maybe the most and clever way to construct Delaunay trianglulation
 
 ### You want use
   Very easy to understand
-  '''
-  import numpy as np
+  '''python
+import numpy as np
 import matplotlib.pyplot as plt
 import delaunay as dt
 
