@@ -12,13 +12,17 @@ https://arxiv.org/abs/2503.10786
 
 ### Step 3: keep increasing the point to the delaunay triangulation
   notice that the border of the delaunay trianglulation is convex hull
+
+  ![upper tangent line and lower tangent line](https://raw.githubusercontent.com/CaiShu233/imgs/refs/heads/main/External_Incremental_Delaunay_Triangulation/E_incremental_Delaunay_1.png)
   
 Find the upper tangent line and lower tangent line of convex hull
 
   notice that the point always out of the convex hull
+  ![upper tangent line and lower tangent line](https://raw.githubusercontent.com/CaiShu233/imgs/refs/heads/main/External_Incremental_Delaunay_Triangulation/E_incremental_Delaunay_2.png)
+  ![upper tangent line and lower tangent line](https://raw.githubusercontent.com/CaiShu233/imgs/refs/heads/main/External_Incremental_Delaunay_Triangulation/E_incremental_Delaunay_3.png)
+  ![upper tangent line and lower tangent line](https://raw.githubusercontent.com/CaiShu233/imgs/refs/heads/main/External_Incremental_Delaunay_Triangulation/E_incremental_Delaunay_4.png)
   
 update delaunay triangulation
-
 
 ## How to use
 
