@@ -2,12 +2,13 @@
 
 Maybe the easiest and most clever way to construct Delaunay triangulation
 
+https://arxiv.org/abs/2503.10786
 
 ## Introduction of Algorithm
 ### Step 1: sort the points
   assume the sorted points are \[P1, P2, P3, ..., Pn]
 ### Step 2: initial first triangle
-  always be the \[P1, P2, P3], sometimes be the \[P1, P2, P3, ..., Pi]
+  always be the \[P1, P2, P3] or \[P1, P3, P2], sometimes be the \[P1, P2, P3, ..., Pi]
 
 ### Step 3: keep increasing the point to the delaunay triangulation
   notice that the border of the delaunay trianglulation is convex hull
@@ -29,24 +30,18 @@ update delaunay triangulation
 
 ### You want use
   Very easy to understand
-  '''python
   
+~~~python
 import numpy as np
-
 import matplotlib.pyplot as plt
-
 import delaunay as dt
 
 N = 100
-
 array = np.random.rand(N,2)
 
 T = dt.Delaunay(array)
 
 print(T.points)
-
 T.show()
-
 plt.show()
-
-  '''
+~~~
